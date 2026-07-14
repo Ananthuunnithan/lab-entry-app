@@ -20,9 +20,9 @@ const ViewEntry = () => {
         },[]
     )
     return (
-        <div>
+        <div className="mx-4">
 <NavBar/>
-            <table class="table text-center justify-content">
+            <table class="table text-center table-bordered custom-table border-dark ">
                 <thead className="table-dark" >
                     <tr>
                         <th scope="col">Name</th>
@@ -45,7 +45,7 @@ const ViewEntry = () => {
                                     <td>{value.department}</td>
                                     <td>{value.sem}</td>
                                     <td>{value.course}</td>
-                                    <td>{value.systemNumber}</td>
+                                    <td>{value.systemNumber}</td> 
                                     <td>{value.loginTime}</td>
                                     <td>{value.logoutTime}</td>
                                     <td>{value.date}</td>
