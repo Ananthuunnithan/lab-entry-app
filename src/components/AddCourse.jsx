@@ -31,14 +31,14 @@ const AddCourse = () => {
                 alert(error.response.data.message);
             })
     }
-  return (
-    <div>
-<NavBar/>
-<div className="container mt-4 mb-4">
+    return (
+        <div>
+            <NavBar />
+            <div className="container mt-4 mb-4">
                 <div className="row">
-                    <div className="col col-12">
-
-                        <div className="row g-4">
+                    <div className="col col-12 text-center">
+                        <h1>Enter Your Details Here!</h1>
+                        <div className="row g-4 mt-4">
                             <div className="col col-12 col-sm-6 col-md-4">
 
                                 <label htmlFor="" className="form-label">Name</label>
@@ -81,7 +81,7 @@ const AddCourse = () => {
                             </div>
                             <div className="col col-12 col-sm-6 col-md-4">
                                 <label htmlFor="" className="form-form">Date</label>
-                                <input type="date" className="form-control"  name="date" value={input.date} onChange={inputHandler} />
+                                <input type="date" className="form-control" name="date" value={input.date} onChange={inputHandler} />
                             </div>
                             <div className="col col-12">
 
@@ -94,8 +94,8 @@ const AddCourse = () => {
                 </div>
             </div>
 
-    </div>
-  )
+        </div>
+    )
 }
 
 export default AddCourse
