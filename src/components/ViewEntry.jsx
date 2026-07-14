@@ -1,14 +1,17 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import NavBar from './NavBar'
 
 const ViewEntry = () => {
     const[data,changeData]=useState([])
     const fetchData=()=>{
-        axios.get("localhost:3000/view").then(
+        axios.get("http://localhost:3000/view").then(
             (response)=>{
                 changeData(response.data)
             }
-        ).catch()
+        ).catch((error)=>{
+            console.log(error)
+        })
     }
 
     useEffect(
@@ -18,7 +21,7 @@ const ViewEntry = () => {
     )
     return (
         <div>
-
+<NavBar/>
             <table class="table text-center justify-content">
                 <thead className="table-dark" >
                     <tr>
